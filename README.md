@@ -25,24 +25,23 @@ SYNAPSE is an intelligent anomaly detection system that uses edge AI to monitor 
 ## Project Structure
 
 SYNAPSE-Anomaly-Detection/
-├── SYNAPSE_ESP32_Firmware.ino # Main Arduino code
+├── SYNAPSE_ESP32_Firmware.ino          # Main Arduino code
 ├── backend/
- ├── controllers/ # Data processing & business logic
- ├── middleware/ # Request/response filters (auth, logging, etc.)
- ├── routes/ # API route definitions (REST/WebSocket entrypoints)
- ├── .env # Backend environment configuration
- ├── package.json # Backend dependencies & scripts
- └── server.js # Main backend server (Express + integrations)
-|── frontend/
- ├── Components/ # Reusable UI blocks (cards, navbars, panels)
- ├── Config/ # Frontend configuration (API base URLs, constants)
- ├── Pages/ # High-level views (Dashboard, Analytics, Settings)
- ├── Styles/ # Styling resources (CSS for layout & themes)
- └── Utils/ # Helper functions (API calls, sockets, formatters)
-├── HARDWARE_CONNECTIONS.md # Wiring diagram & pin details
-├── THINGSPEAK_SETUP.md # Cloud setup guide
-└── WORKFLOW.md # System architecture
-
+│   ├── controllers/                    # Data processing & business logic
+│   ├── middleware/                     # Request/response filters (auth, logging, etc.)
+│   ├── routes/                         # API route definitions (REST/WebSocket entrypoints)
+│   ├── .env                            # Backend environment configuration
+│   ├── package.json                    # Backend dependencies & scripts
+│   └── server.js                       # Main backend server (Express + integrations)
+├── frontend/
+│   ├── Components/                     # Reusable UI blocks (cards, navbars, panels)
+│   ├── Config/                         # Frontend configuration (API base URLs, constants)
+│   ├── Pages/                          # High-level views (Dashboard, Analytics, Settings)
+│   ├── Styles/                         # Styling resources (CSS for layout & themes)
+│   └── Utils/                          # Helper functions (API calls, sockets, formatters)
+├── HARDWARE_CONNECTIONS.md             # Wiring diagram & pin details
+├── THINGSPEAK_SETUP.md                 # Cloud setup guide
+└── WORKFLOW.md                         # System architecture
 
 ## 🚀 Quick Start
 

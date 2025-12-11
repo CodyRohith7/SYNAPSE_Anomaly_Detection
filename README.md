@@ -1,7 +1,5 @@
-# SYNAPSE_Anomaly_Detection
-Real-time edge AI anomaly detection system with ESP32, ML model, cloud integration, and web dashboard
-
 # SYNAPSE: Real-Time Edge AI Anomaly Detection System
+Real-time edge AI anomaly detection system with ESP32, ML model, cloud integration, and web dashboard
 
 **Team SYNASE** | VIT Hackathon (GLYTCH 2025) | **Top 5 Finalist!** 
 

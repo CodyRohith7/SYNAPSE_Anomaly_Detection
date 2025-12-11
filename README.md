@@ -13,7 +13,6 @@ It detects anomalies before they become problems!
 -  Temperature tracking with gradient analysis
 -  On-device ML model for instant anomaly detection
 -  Web dashboard via ThingSpeak
--  Smart buzzer alerts (warning & critical levels)
 -  OLED display for local feedback
 
 ## Hardware Stack
@@ -21,25 +20,26 @@ It detects anomalies before they become problems!
 - **Accelerometer/Gyro**: MPU6050
 - **Temperature Sensor**: DHT22
 - **Display**: 128x64 OLED
-- **Alert**: Buzzer (GPIO 4)
+
+## Project Structure
 
 1. SYNAPSE_ESP32_Firmware.ino
 2. backend/
-   2.1 controllers/                    # Data processing & business logic
-   2.2 middleware/                     # Request/response filters (auth, logging, etc.)
-   2.3 routes/                         # API route definitions (REST/WebSocket entrypoints)
-   2.4 .env                            # Backend environment configuration
-   2.5 package.json                    # Backend dependencies & scripts
-   2.6 server.js                       # Main backend server (Express + integrations)
+   2.1 controllers                    
+   2.2 middleware                     
+   2.3 routes                      
+   2.4 .env                            
+   2.5 package.json                   
+   2.6 server.js                      
 3. frontend/
-   3.1 Components/                     # Reusable UI blocks (cards, navbars, panels)
-   3.2 Config/                         # Frontend configuration (API base URLs, constants)
-   3.3 Pages/                          # High-level views (Dashboard, Analytics, Settings)
-   3.4 Styles/                         # Styling resources (CSS for layout & themes)
-   3.5 Utils/                          # Helper functions (API calls, sockets, formatters)
-4. HARDWARE_CONNECTIONS.md             # Wiring diagram & pin details
-5. THINGSPEAK_SETUP.md                 # Cloud setup guide
-6. WORKFLOW.md                         # System architecture
+   3.1 Components                    
+   3.2 Config                        
+   3.3 Pages                         
+   3.4 Styles                         
+   3.5 Utils                          
+4. HARDWARE_CONNECTIONS.md            
+5. THINGSPEAK_SETUP.md                
+6. WORKFLOW.md                       
 
 ## 🚀 Quick Start
 

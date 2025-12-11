@@ -1,30 +1,3 @@
-/*
-═════════════════════════════════════════════════════════════════
-  SYNAPSE - FINAL COMPLETE CODE (FIXED)
-  ESP32 DevKit WROOM32 - ALL COMPONENTS + THINGSPEAK
-  
-  ✅ VARIABLE NAME FIXES:
-  - accel_x_buf → accelX_buf
-  - accel_y_buf → accelY_buf
-  - accel_z_buf → accelZ_buf
-  
-  TESTED & WORKING CONFIGURATION:
-  ✅ OLED Display (I2C)
-  ✅ MPU6050 Accelerometer (I2C)
-  ✅ DHT22 Temperature Sensor (GPIO)
-  ✅ WiFi + ThingSpeak Cloud Integration
-  
-  THINGSPEAK FIELD MAPPING:
-  Field 1: Vibration_RMS_X (m/s²)
-  Field 2: Vibration_RMS_Y (m/s²)
-  Field 3: Vibration_RMS_Z (m/s²)
-  Field 4: Temperature (°C)
-  Field 5: Anomaly_Score (%)
-  Field 6: Alert_Status (0/1/2)
-  Field 7: Peak_Vibration (m/s²)
-  Field 8: System_Status (0/1)
-═════════════════════════════════════════════════════════════════
-*/
 
 #include <Wire.h>
 #include <DHT.h>
@@ -35,12 +8,11 @@
 // ═══════════════════════════════════════════════════════════════
 // WIFI & CLOUD CONFIG
 // ═══════════════════════════════════════════════════════════════
-const char* ssid = "Cody";
-const char* password = "Hinataaa";
-
-const unsigned long channelID = 3196619;
-const char* writeAPIKey = "XSF9N4UR4K5CA8AY";
-const char* thingSpeakServer = "api.thingspeak.com";
+const char* ssid = "Your_WiFi_SSID"; // Your WiFi network name
+const char* password = "Your_WiFi_Password"; // Your WiFi password
+const unsigned long channelID = YOUR_CHANNEL_ID; // From ThingSpeak
+const char* writeAPIKey = "YOUR_WRITE_API_KEY"; // From ThingSpeak
+const char* thingSpeakServer = "api.thingspeak.com"; 
 
 bool wifiConnected = false;
 
@@ -70,11 +42,11 @@ unsigned long sampleCount = 0;
 #define DHT_INTERVAL 2000        // 2 seconds
 #define CLOUD_INTERVAL 15000     // 15 seconds (ThingSpeak rate limit)
 
-// MPU6050 buffers - FIXED VARIABLE NAMES
+// MPU6050 buffers
 #define BUFFER_SIZE 100
-float accelX_buf[BUFFER_SIZE];  // FIXED: was accel_x_buf
-float accelY_buf[BUFFER_SIZE];  // FIXED: was accel_y_buf
-float accelZ_buf[BUFFER_SIZE];  // FIXED: was accel_z_buf
+float accelX_buf[BUFFER_SIZE];  
+float accelY_buf[BUFFER_SIZE];  
+float accelZ_buf[BUFFER_SIZE];  
 int accel_index = 0;
 
 // Current readings

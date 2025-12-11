@@ -5,7 +5,8 @@ Real-time edge AI anomaly detection system with ESP32, ML model, cloud integrati
 
 ## Project Overview
 
-SYNAPSE is an intelligent anomaly detection system that uses edge AI to monitor equipment vibration and temperature in real-time. It detects anomalies before they become problems!
+SYNAPSE is an intelligent anomaly detection system that uses edge AI to monitor equipment vibration and temperature in real-time. 
+It detects anomalies before they become problems!
 
 ### Key Features
 -  Real-time vibration monitoring (100Hz sampling)
@@ -15,7 +16,7 @@ SYNAPSE is an intelligent anomaly detection system that uses edge AI to monitor 
 -  Smart buzzer alerts (warning & critical levels)
 -  OLED display for local feedback
 
-##  Hardware Stack
+## Hardware Stack
 - **Microcontroller**: ESP32
 - **Accelerometer/Gyro**: MPU6050
 - **Temperature Sensor**: DHT22
@@ -79,4 +80,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Questions?
 Open an issue or contact the team!
-

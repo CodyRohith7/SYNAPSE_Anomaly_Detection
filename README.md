@@ -63,7 +63,7 @@ Navigate to your ThingSpeak dashboard to view real-time data!
 ## Team Members
 1. Rohith G - https://github.com/CodyRohith7
 2. Rakshitha BRN - https://github.com/BRN-RAKSHITHA
-3. Koushik R -
+3. Koushik R - https://github.com/Koushik-0310
 4. Vishwa Priya V - https://github.com/vishwapriyav10a-max
 5. Poorni S - https://github.com/poorni342007-byte
 6. Trilok K R - https://github.com/trilok135

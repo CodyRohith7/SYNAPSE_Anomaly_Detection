@@ -24,14 +24,14 @@ It detects anomalies before they become problems!
 ## Project Structure
 
 1. SYNAPSE_ESP32_Firmware.ino
-2. backend/
+2. backend
    2.1 controllers                    
    2.2 middleware                     
    2.3 routes                      
    2.4 .env                            
    2.5 package.json                   
    2.6 server.js                      
-3. frontend/
+3. frontend
    3.1 Components                    
    3.2 Config                        
    3.3 Pages                         
